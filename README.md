@@ -7,6 +7,7 @@
   <li>Creating Walls</li>
   <li>Block States or modes</li>
   <li>Copy & Paste</li>
+  <li>Clearing Selections</li>
 </ul>
 
 <h2>How it was written in:</h2>
