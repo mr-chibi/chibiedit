@@ -8,6 +8,8 @@
   <li>Block States or modes</li>
   <li>Copy & Paste</li>
   <li>Clearing Selections</li>
+  <li>Circle Outlines</li>
+  <li>Spheres</li>
 </ul>
 
 <h2>How it was written in:</h2>
