@@ -11,12 +11,6 @@ execute if score test_pos1y position >= pos2y position run execute as @e[type=mi
 
 
 
-
-
-
-
-
-
 #
 execute if score pos1z position < pos1z_corner position run execute as @e[type=minecraft:armor_stand,tag=test,tag=!step_1] at @s run setblock ~ ~1 ~ minecraft:red_concrete
 execute if score pos1z position < pos1z_corner position run execute as @e[type=minecraft:armor_stand,tag=test,tag=!step_1] at @s run tp @s ~ ~ ~1
@@ -39,19 +33,3 @@ execute if score test_pos1x position = pos1x position run execute as @e[type=min
 execute if score test_pos1x position = pos1x position run execute as @e[type=minecraft:armor_stand,tag=test,tag=step_1,tag=step_2,tag=step_3,tag=step_4] at @s run tp @s ~-1 ~ ~
 execute if score test_pos1x position = pos1x position run execute as @e[type=minecraft:armor_stand,tag=test,tag=step_1,tag=step_2,tag=step_3,tag=step_4] at @s run tp @s ~ ~1 ~
 execute if score test_pos1x position = pos1x position run execute as @e[type=minecraft:armor_stand,tag=test,tag=step_1,tag=step_2,tag=step_3,tag=step_4] at @s run data modify entity @s Tags set value ["test", "walls_1"]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

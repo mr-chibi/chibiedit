@@ -7,6 +7,9 @@ scoreboard objectives add save trigger
 scoreboard objectives add load trigger
 scoreboard objectives add paste trigger
 scoreboard objectives add walls trigger
+scoreboard objectives add fill trigger
+scoreboard objectives add sphere trigger
+scoreboard objectives add outline_circle trigger
 
 #
 scoreboard objectives add position dummy

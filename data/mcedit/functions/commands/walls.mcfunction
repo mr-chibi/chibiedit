@@ -8,16 +8,11 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:["pos1x_corner"], CustomName:"{\"text\"
 summon minecraft:armor_stand ~ ~ ~ {Tags:["pos2x_corner"], CustomName:"{\"text\": \"pos2x_corner\"}", CustomNameVisible:1b}
 
 #
-execute as @s[y_rotation=-45..45, scores={walls=1}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_1"], CustomName:"{\"text\": \"Wall South\"}", CustomNameVisible:1b}
-execute as @s[y_rotation=-135..-45, scores={walls=2}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_2"], CustomName:"{\"text\": \"Wall East\"}", CustomNameVisible:1b}
-execute as @s[y_rotation=135..-135, scores={walls=3}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_3"], CustomName:"{\"text\": \"Wall North\"}", CustomNameVisible:1b}
-execute as @s[y_rotation=45..135, scores={walls=4}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_4"], CustomName:"{\"text\": \"Wall West\"}", CustomNameVisible:1b}
+execute as @s[y_rotation=-45..45] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_1"], CustomName:"{\"text\": \"Wall South\"}", CustomNameVisible:1b}
+execute as @s[y_rotation=-135..-45] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_2"], CustomName:"{\"text\": \"Wall East\"}", CustomNameVisible:1b}
+execute as @s[y_rotation=135..-135] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_3"], CustomName:"{\"text\": \"Wall North\"}", CustomNameVisible:1b}
+execute as @s[y_rotation=45..135] run summon minecraft:armor_stand ~ ~ ~ {Tags:["test","walls_4"], CustomName:"{\"text\": \"Wall West\"}", CustomNameVisible:1b}
 
-
-# execute as @s[y_rotation=135..-135] run say North /trigger walls set 3
-# execute as @s[y_rotation=-135..-45] run say East /trigger walls set 2
-# execute as @s[y_rotation=-45..45] run say South /trigger walls set 1
-# execute as @s[y_rotation=45..135] run say West /trigger walls set 4
 
 #
 execute as @e[type=minecraft:armor_stand,tag=test] at @s run tp @s @e[type=minecraft:armor_stand,limit=1,tag=pos1]
