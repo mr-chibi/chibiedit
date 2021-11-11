@@ -196,6 +196,11 @@ execute as @s[scores={layer=160}] run scoreboard players set @e[type=minecraft:a
 
 #
 execute as @s[scores={layer=161}] run scoreboard players set @e[type=minecraft:armor_stand,tag=layer,limit=1] layer 161
+execute as @s[scores={layer=162}] run scoreboard players set @e[type=minecraft:armor_stand,tag=layer,limit=1] layer 162
+execute as @s[scores={layer=163}] run scoreboard players set @e[type=minecraft:armor_stand,tag=layer,limit=1] layer 163
+execute as @s[scores={layer=164}] run scoreboard players set @e[type=minecraft:armor_stand,tag=layer,limit=1] layer 164
+execute as @s[scores={layer=165}] run scoreboard players set @e[type=minecraft:armor_stand,tag=layer,limit=1] layer 165
+execute as @s[scores={layer=166}] run scoreboard players set @e[type=minecraft:armor_stand,tag=layer,limit=1] layer 166
 
 
 #
