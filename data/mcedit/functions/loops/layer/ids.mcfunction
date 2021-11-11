@@ -198,3 +198,10 @@ execute as @s[scores={layer=159}] run setblock ~ ~1 ~ minecraft:dark_prismarine_
 #
 execute as @s[scores={layer=160}] run setblock ~ ~1 ~ minecraft:smooth_quartz
 execute as @s[scores={layer=161}] run setblock ~ ~1 ~ minecraft:smooth_red_sandstone
+execute as @s[scores={layer=162}] run setblock ~ ~1 ~ minecraft:smooth_sandstone
+execute as @s[scores={layer=163}] run setblock ~ ~1 ~ minecraft:smooth_stone
+
+#
+execute as @s[scores={layer=164}] run setblock ~ ~1 ~ minecraft:bricks
+execute as @s[scores={layer=165}] run setblock ~ ~1 ~ minecraft:bookshelf
+execute as @s[scores={layer=166}] run setblock ~ ~1 ~ minecraft:mossy_cobblestone
