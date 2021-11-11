@@ -1,44 +1,33 @@
-tellraw @s [{"text": "[ChibiEdit]: ", "color": "#1BDF8A"}, {"text": "Cleared Selected, ", "color": "#8D86F9"}, {"text": "\"minecraft:structure_block\"", "color": "#8863FE"}]
+# SAVE POS:
+execute as @s[y_rotation=135..-135] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~ minecraft:air
+execute as @s[y_rotation=-135..-45] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~ minecraft:air
+execute as @s[y_rotation=-45..45] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~ minecraft:air
+execute as @s[y_rotation=45..135] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~ minecraft:air
 
-#
-execute as @e[type=minecraft:armor_stand,tag=pos1] at @s if block ~ ~ ~ minecraft:structure_block run setblock ~ ~ ~ minecraft:air
-execute as @e[type=minecraft:armor_stand,name=pos2] at @s if block ~ ~ ~ minecraft:structure_block run setblock ~ ~ ~ minecraft:air
-execute as @e[type=minecraft:armor_stand,tag=save] at @s if block ~ ~ ~ minecraft:structure_block run setblock ~ ~ ~ minecraft:air
+
+# Redstone:
+execute as @s[y_rotation=135..-135] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~-1 ~ ~ minecraft:air
+execute as @s[y_rotation=-135..-45] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~-1 minecraft:air
+execute as @s[y_rotation=-45..45] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~1 ~ ~ minecraft:air
+execute as @s[y_rotation=45..135] run execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~1 minecraft:air
+
+
+# POS 1 & 2:
+execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run setblock ~ ~ ~ minecraft:air
+execute as @e[type=minecraft:armor_stand,tag=pos2] at @s run setblock ~ ~ ~ minecraft:air
+
 
 #
 execute as @e[type=minecraft:armor_stand,tag=pos1] at @s run kill @s
-execute as @e[type=minecraft:armor_stand,name=pos2] at @s run kill @s
-execute as @e[type=minecraft:armor_stand,tag=save] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=pos2] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=set] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=pillar] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=fill] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=walls] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=paste] at @s run kill @s
 
 #
-execute as @e[type=armor_stand,tag=pos1x_corner] at @s run kill @s
-execute as @e[type=armor_stand,tag=pos2x_corner] at @s run kill @s
-execute as @e[type=armor_stand,tag=test] at @s run kill @s
-
-#
-scoreboard players reset pos1x position
-scoreboard players reset pos1y position
-scoreboard players reset pos1z position
-
-#
-scoreboard players reset pos2x position
-scoreboard players reset pos2y position
-scoreboard players reset pos2z position
-
-#
-scoreboard players reset test_pos1x position
-scoreboard players reset test_pos1y position
-scoreboard players reset test_pos1z position
-
-#
-scoreboard players reset pos1x_corner
-scoreboard players reset pos1y_corner
-scoreboard players reset pos1z_corner
-
-#
-scoreboard players reset pos2x_corner
-scoreboard players reset pos2y_corner
-scoreboard players reset pos2z_corner
+tellraw @s [{"text": "[ChibiEdit]: ", "color": "#1BDF8A"}, {"text": "Cleared all selections!", "color": "#8D86F9"}]
 
 #
 scoreboard players set @s sel 0
