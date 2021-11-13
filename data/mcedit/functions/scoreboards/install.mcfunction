@@ -1,5 +1,15 @@
-#
+# Team name:
 team add mcedit
+
+# Display "Name":
+team modify mcedit displayName "Mr_Chibi's Edit"
+
+# "Name" Colors:
+team modify mcedit color gray
+
+# Update prefix:
+team modify mcedit prefix [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Edit", "color": "#1BDF8A"}, {"text": "] ", "color": "white"}]
+
 
 #
 scoreboard objectives add mcedit_wand minecraft.used:minecraft.carrot_on_a_stick
